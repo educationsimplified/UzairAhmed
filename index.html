@@ -4,98 +4,209 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uzair Ahmed Resume</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
+        }
+        .profile-pic {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .profile-pic img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .section {
+            background-color: #ecf0f1;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 800px;
+            display: none; /* Initially hide all sections */
+        }
+        .section h2 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .section ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid #ccc;
+        }
+        .section ul li a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        .section ul li a:hover {
+            text-decoration: underline;
+        }
+        .resume-button {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: #ecf0f1;
+            padding: 15px 30px;
+            margin: 20px 0;
+            border-radius: 8px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.5em;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .resume-button:hover {
+            background-color: #c0392b;
+            transform: translateY(-2px);
+        }
+        .glow-text {
+            color: #ffffff;
+            text-shadow: 0 0 5px #e74c3c, 0 0 10px #e74c3c, 0 0 20px #e74c3c, 0 0 40px #e74c3c;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #bdc3c7;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTwICfL9RZcJk2lPZmFNWY-aVrHoglWi_pWcBrOBcBDvhUcg_c9c_BGjfTFj9dml30Rs7X0qp13PxzGNMU-lHIHAulimsAPHFXSTjAe65WVtbTqKZrb8-kiiWd3yKN2vEUX_6_DhO7umKKN6enP07YHknwOvrlHjy3m-6DCip0WwLD/s220/profile%20img.jpeg" alt="Uzair Ahmed" class="profile-pic">
-            <h1>Uzair Ahmed Resume</h1>
-            <h2>"Innovative Mind, Passionate Soul"</h2>
-        </header>
 
-        <button class="glow-button" onclick="showResume()">Click Here for Resume</button>
+<header>
+    <h1>Uzair Ahmed Resume</h1>
+    <p>"Crafting Futures with Creativity and Tech."</p>
+</header>
 
-        <section id="resume" class="hidden">
-            <h3>Personal Information</h3>
-            <p><strong>Name:</strong> Uzair Ahmed</p>
-            <p><strong>Contact Number:</strong> +91 9335723334</p>
-            <p><strong>WhatsApp:</strong> <a href="https://wa.link/4jrun4">https://wa.link/4jrun4</a></p>
-            <p><strong>Insta ID:</strong> <a href="https://www.instagram.com/uzairvibes?igsh=MXEwczdtd290aXl0Zw==">https://www.instagram.com/uzairvibes</a></p>
-            <p><strong>Email:</strong> <a href="mailto:uzairatwork02@gmail.com">uzairatwork02@gmail.com</a></p>
-            <p><strong>DOB:</strong> 24:3:2003</p>
-            <p><strong>Address:</strong> CK 43/71K, Chattatale Chowk, Varanasi</p>
-            <p><strong>Father's Name:</strong> Ashfaque Ahmad</p>
-            <p><strong>Mother's Name:</strong> Gulshan Parveen</p>
-            <p><strong>Gender:</strong> Male</p>
-            <p><strong>Languages Known:</strong> English, Hindi, Urdu</p>
+<div class="profile-pic">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTwICfL9RZcJk2lPZmFNWY-aVrHoglWi_pWcBrOBcBDvhUcg_c9c_BGjfTFj9dml30Rs7X0qp13PxzGNMU-lHIHAulimsAPHFXSTjAe65WVtbTqKZrb8-kiiWd3yKN2vEUX_6_DhO7umKKN6enP07YHknwOvrlHjy3m-6DCip0WwLD/s220/profile%20img.jpeg" alt="Uzair Ahmed">
+</div>
 
-            <h3>Education Status</h3>
-            <p>10th 2019-2020 with W.H. Smith Memorial School (ICSE) Stream Science With Computer</p>
-            <p>12th 2021-2022 W.H. Smith Memorial School (ICSE) Stream</p>
-            <p>Currently Pursuing B.A (Hons) Mass Communication from MGKVP, Varanasi</p>
+<div class="section">
+    <h2>Personal Information</h2>
+    <ul>
+        <li><strong>Name:</strong> Uzair Ahmed</li>
+        <li><strong>Contact Number:</strong> +91 9335723334</li>
+        <li><strong>WhatsApp:</strong> <a href="https://wa.link/4jrun4">https://wa.link/4jrun4</a></li>
+        <li><strong>Instagram:</strong> <a href="https://www.instagram.com/uzairvibes">https://www.instagram.com/uzairvibes</a></li>
+        <li><strong>Email:</strong> uzairatwork02@gmail.com</li>
+        <li><strong>Date of Birth:</strong> 24/03/2003</li>
+        <li><strong>Address:</strong> CK 43/71K, Chattatale Chowk, Varanasi</li>
+        <li><strong>Father's Name:</strong> Ashfaque Ahmad</li>
+        <li><strong>Mother's Name:</strong> Gulshan Parveen</li>
+        <li><strong>Gender:</strong> Male</li>
+        <li><strong>Languages Known:</strong> English, Hindi, Urdu</li>
+    </ul>
+</div>
 
-            <h3>Skills</h3>
-            <p><strong>Content Writer and Copywriting:</strong> Freelance work with 4 years of experience.</p>
-            <p><strong>Video Editor and Graphic Designer:</strong> 6 years of experience.</p>
-            <p>Samples: 
-                <a href="https://www.instagram.com/uzair_entertainment?igsh=MWR4b2k0aGYyYWt5dQ==">Uzair Entertainment Instagram</a>, 
-                <a href="https://youtube.com/@uzairentertainment?si=fWoXk6Sa8ABGqfU4">Uzair Entertainment YouTube</a>, 
-                <a href="https://www.instagram.com/teamglobalgyaan?igsh=b3N0Y2E0ZGVpcG90">Global Gyaan</a>
-            </p>
-            <p>Advanced command in Adobe After Effects, Premiere Pro, Photoshop, Lightroom, CamCut, KineMaster, Snapseed, Pixellab, PicsArt.</p>
-            <p><strong>Front End Web Development:</strong> Certified UDEMY, 3 years of experience.</p>
-            <p>Samples: 
-                <a href="https://educationsimplified.github.io/mgkvp/">MGKVP University Website</a>, 
-                <a href="https://educationsimplified.github.io/universe/">Universe Website</a>, 
-                <a href="https://educationsimplified.github.io/whatsapp-message/">WhatsApp Message Sender</a>
-            </p>
-            <p><strong>Prompt Engineering:</strong> Expert in ChatGPT and Gemini, specialized in coding perspectives.</p>
-            <p><strong>Programming Languages:</strong> Trained in Java, C++, Python.</p>
-            <p><strong>Advertising:</strong> Professional in Meta Ads, YouTube Ads, Google Ads.</p>
-            <p><strong>App Development Services:</strong> Provides services with a team of experts.</p>
+<div class="section">
+    <h2>Education</h2>
+    <ul>
+        <li><strong>Maryam Education Home:</strong> Nursery to UKG</li>
+        <li><strong>W.H. Smith Memorial School:</strong> Upper Nursery to 12th Grade (ICSE & ISC)</li>
+        <li><strong>Current:</strong> B.A (Hons) Mass Communication, MGKVP, Varanasi</li>
+    </ul>
+</div>
 
-            <h3>Extra Skills</h3>
-            <p><strong>Public Speaking</strong></p>
-            <p><strong>Cooking</strong></p>
-            <p><strong>Cycling and Long Distance Running</strong></p>
-            <p><strong>Trained Dancer and Mixed Martial Arts:</strong> 
-                <a href="https://youtu.be/rzFCBp0GPZ8">Dance Video 1</a>, 
-                <a href="https://youtu.be/I1_-7W19yFs">Dance Video 2</a>, 
-                <a href="https://youtu.be/PH18hftA148">Dance Video 3</a>, 
-                <a href="https://youtu.be/g8p2kTuo_Js">Dance Video 4</a>
-            </p>
-            <p><strong>Martial Arts:</strong> 
-                <a href="https://youtu.be/QAY_QHnC2Fw?si=GKal9vaLNV52UtY-">Martial Arts Video</a>
-            </p>
-            <p>Won many school competitions like Smith Talent Search Examination (3rd Rank, 7th Rank, 5th Rank), Smith Tech Fest (6 times), Hindi Slogan Competition (Class 8).</p>
-            <p>Hosted a seminar on cybersecurity at a state government college in partnership with SEG Academy.</p>
-            <p><strong>Cricket:</strong> Represented Varanasi district tournament as a medium pacer.</p>
-            <p><strong>Audition for Movie:</strong> 
-                <a href="https://youtu.be/dl505XCkWhQ?si=lNzvUIppAQkJN2Ie">Raktanchal Season 2</a>
-            </p>
+<div class="section">
+    <h2>Skills</h2>
+    <ul>
+        <li>
+            <strong>Content Writing and Copywriting:</strong> 4 years of experience.
+            <br>If you want to see samples, message me on WhatsApp: <a href="https://wa.link/4jrun4">https://wa.link/4jrun4</a>
+        </li>
+        <li>
+            <strong>Video Editing and Graphic Design:</strong> 6 years of experience.
+            <br>Samples:
+            <ul>
+                <li><a href="https://www.instagram.com/uzair_entertainment?igsh=MWR4b2k0aGYyYWt5dQ==">Uzair Entertainment Instagram</a></li>
+                <li><a href="https://youtube.com/@uzairentertainment?si=fWoXk6Sa8ABGqfU4">Uzair Entertainment YouTube</a></li>
+                <li><a href="https://www.instagram.com/teamglobalgyaan?igsh=b3N0Y2E0ZGVpcG90">Global Gyaan</a></li>
+            </ul>
+        </li>
+        <li>
+            <strong>Front-End Web Development:</strong> 3 years of experience, Certified UDEMY, Wordpress.
+            <br>Samples:
+            <ul>
+                <li><a href="https://educationsimplified.github.io/mgkvp/">MGKVP University Website</a></li>
+                <li><a href="https://educationsimplified.github.io/universe/">Universe Website</a></li>
+                <li><a href="https://educationsimplified.github.io/whatsapp-message/">WhatsApp Message Sender</a></li>
+            </ul>
+        </li>
+        <li><strong>Prompt Engineering:</strong> Expert in ChatGPT and Gemini, specialized in coding perspectives.</li>
+        <li><strong>Programming Languages:</strong> Java, C++, Python (Self-taught).</li>
+        <li><strong>Advertising:</strong> Professional in Meta Ads, YouTube Ads, Google Ads.</li>
+        <li><strong>App Development Services:</strong> Provides services with a team of experts.</li>
+    </ul>
+</div>
 
-            <h3>Work Experience</h3>
-            <p>4 years of freelance work experience in copyrighting, web development, ads, video editing, graphic design. Love to learn new things and explore.</p>
-            <p>Due to company policy, samples of freelance work cannot be shown. If you want to see samples, message me on WhatsApp: <a href="https://wa.link/4jrun4">https://wa.link/4jrun4</a></p>
-            <p>Worked under parental vision in the family business RUBY PACKING: 
-                <a href="https://www.instagram.com/rubypacking?igsh=dGZkYXd4cXNyeWxp">Instagram</a>
-            </p>
-            <p>Working with SEG Academy: 
-                <a href="https://segacademy.com/">SEG Academy Website</a>
-            </p>
-            <p>Working with TECHOGIES</p>
-            <p>Comfortable with cloud-based work, delivering work on time with the best quality at an affordable price.</p>
+<div class="section">
+    <h2>Additional Skills</h2>
+    <ul>
+        <li><strong>Public Speaking:</strong> Effective communication and presentation skills .</li>
+        <li><strong>Cooking:</strong> Passion for culinary arts with experience in preparing diverse cuisines.</li>
+        <li><strong>Cycling:</strong> Enthusiastic cyclist with a focus on endurance and long-distance rides.</li>
+        <li><strong>Long Distance Running:</strong> Committed to maintaining fitness through regular long-distance running.</li>
+        <li><strong>Trained Dancer:</strong> Taken Professional training in break dance From ADDICTION Institue, Varanasi</li>
+        <li><strong>Tricking Mixed Martial Arts:</strong> Skilled in the art of tricking and MMA.</li>
+        <li><strong>District Cricket Tournaments:</strong> Participated in numerous district-level cricket tournaments.</li>
+        <li><strong>Exercise and Gymming:</strong> Regular fitness enthusiast with a disciplined workout regimen.</li>
+        <li><strong>Acting:</strong> Experience in school-level plays, Skilled in character portrayal and expression.</li>
+        <li><strong>Knowledge in Nutrition Science and Strength and Conditioning Training:</strong> Enthusiast in the field of Nutrition and has knowledge in the fitness training.</li>
+        <li><strong>Cybersecurity Seminar Host:</strong> Experience in hosting a seminar on cybersecurity topics.</li>
+    </ul>
+</div>
 
-            <h3>Future Goals</h3>
-            <p>Wanted to pursue an MBA and learn new skills. Passionate about technology, learning new things, and teaching, guiding, and talking with youngsters.</p>
+<a class="resume-button glow-text" onclick="toggleResume()">Click Here for Resume</a>
 
-            <footer>
-                <p>"Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful."</p>
-            </footer>
-        </section>
-    </div>
+<footer>
+    &copy; 2024 Uzair Ahmed. All rights reserved.
+</footer>
 
-    <script src="script.js"></script>
+<script>
+    function toggleResume() {
+        var sections = document.querySelectorAll('.section');
+        sections.forEach(function(section) {
+            if (section.style.display === 'none') {
+                section.style.display = 'block';
+            } else {
+                section.style.display = 'none';
+            }
+        });
+    }
+</script>
+
 </body>
 </html>
